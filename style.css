@@ -67,21 +67,18 @@ noscript {
 #title .fas.fa-bars {
   display: block;
   position: absolute;
-  right: 0;
+  left: 0;
   top:  0;
   color: #e8e6e6;
   z-index: 9;
-  font-size: 18px;
-  padding: 10px;
+  font-size: 17px;
+  padding: 8px;
   cursor: pointer;
+  background-color: rgba(0,0,0,0.4);
 }
 
 #title .fas.fa-bars:hover {
-  background-color: rgba(0,0,0,0.5);
-}
-
-#title .fas.fa-bars:hover {
-  color: #e8e6e6;
+  background-color: rgba(0,0,0,0.6);
 }
 
 #title nav menu {
@@ -607,6 +604,10 @@ noscript {
 
   /* Title section */
 
+  #title .fas.fa-bars {
+    font-size: 18px;
+  }
+
   #welcome h2 {
     font-size: 24px;
   }
@@ -717,28 +718,7 @@ noscript {
   /* Title section */
 
   #title .fas.fa-bars {
-    display: none;
-  }
-
-  #title nav menu {
-    background: rgba(31, 49, 56, 0.5);
-    padding: 0;
-    left: 0;
-    top: 0;
-    display: block !important;
-  }
-
-  #title nav menu li:first-child {
-    margin-left: 20px;
-  }
-
-  #title nav menu li a {
-    padding: 20px;
-    float: left;
-  }
-
-  #title a:hover {
-    background: rgba(0,179,240,0.2);
+    font-size: 19px;
   }
 
   #welcome h2 {
@@ -902,6 +882,27 @@ noscript {
 @media only screen and (min-width: 992px) {
 
   /* Title section */
+
+  #title .fas.fa-bars {
+    display: none;
+  }
+
+  #title nav menu {
+    background: rgba(31, 49, 56, 0.5);
+    padding: 0;
+    left: 0;
+    top: 0;
+    display: block !important;
+  }
+
+  #title nav menu li:first-child {
+    margin-left: 20px;
+  }
+
+  #title nav menu li a {
+    padding: 20px;
+    float: left;
+  }
 
   #welcome h2 {
     font-size: 36px;
