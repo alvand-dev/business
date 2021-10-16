@@ -2,11 +2,16 @@
 
 * {
   box-sizing: border-box;
+  transition: 0.5s;
 }
 
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
 }
 
 noscript {
@@ -55,7 +60,6 @@ noscript {
 #main-header a h1 {
   font-family: Merriweather, serif;
   font-size: 18px;
-  font-weight: normal;
 }
 
 /* Title section */
@@ -120,7 +124,6 @@ noscript {
 #welcome h2 {
   color: #fcf9f7;
   font-family: Merriweather, serif;
-  font-weight: normal;
   font-size: 18px;
   margin-bottom: 14px;
 }
@@ -128,7 +131,6 @@ noscript {
 #welcome h3 {
   color: #d7794a;
   font-size: 16px;
-  font-weight: normal;
   margin-top: 0px;
 }
 
@@ -182,7 +184,6 @@ noscript {
 #leaders .leader-cont h3 {
   font-family: Merriweather, serif;
   font-size: 18px;
-  font-weight: normal;
   margin: 33px auto 20px auto;
 }
 
@@ -456,7 +457,6 @@ noscript {
 
 #about .image-text h5 {
   border: 2px solid #323648;
-  font-weight: normal;
   font-size: 16px;
   width: 90%;
   padding: 10px;
@@ -494,7 +494,6 @@ noscript {
 
 #top-footer div h3 {
   font-family: Merriweather, serif;
-  font-weight: normal;
   font-size: 18px;
 }
 
