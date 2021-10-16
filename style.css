@@ -1,0 +1,933 @@
+/* Basic styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+noscript {
+  background-color: #ff0;
+}
+
+.clear {
+  clear: both;
+}
+
+/* Back to top button */
+
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #898d8e;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+#back-to-top:hover {
+  background-color: #d7794a;
+}
+
+/* Main header */
+
+#main-header {
+  text-align: center;
+  width: 90%;
+  margin: 32px auto;
+}
+
+#main-header a {
+  text-decoration: none;
+  color: #d7794a;
+}
+
+#main-header a h1 {
+  font-family: Merriweather, serif;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/* Title section */
+
+#title {
+  position: relative;
+}
+
+#title .fas.fa-bars {
+  display: block;
+  position: absolute;
+  right: 0;
+  top:  0;
+  color: #e8e6e6;
+  z-index: 9;
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#title .fas.fa-bars:hover {
+  background-color: rgba(0,0,0,0.5);
+}
+
+#title .fas.fa-bars:hover {
+  color: #e8e6e6;
+}
+
+#title nav menu {
+  background: rgba(31, 49, 56, 0.95);
+  margin: 0;
+  padding: 40px 0 10px;
+  list-style-type: none;
+  display: none;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+#title nav menu li a {
+  color: #e8e6e6;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 20px 16px;
+  display: block;
+}
+
+#title nav menu li a:hover {
+  background: rgba(0,179,240,0.5);
+  cursor: pointer;
+}
+
+#title img {
+  width: 100%;
+  height: auto;
+}
+
+#welcome {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  text-align: center;
+}
+
+#welcome h2 {
+  color: #fcf9f7;
+  font-family: Merriweather, serif;
+  font-weight: normal;
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+
+#welcome h3 {
+  color: #d7794a;
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 0px;
+}
+
+/* Team leaders */
+
+#leaders {
+  width: 100%;
+  text-align: center;
+}
+
+#leaders, #advan-cont, #contact-us, #about-us, #gallery {
+  padding: 72px 0;
+}
+
+#leaders h1 , #gallery h1 {
+  color: #a95e39;
+  font-family: Merriweather, serif;
+  margin: 0 auto 26px auto;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#leaders h1 , #gallery h1 , #about div h2 {
+  font-size: 24px;
+}
+
+#leaders hr , #gallery hr {
+  width: 150px;
+  border-color: #88543a;
+}
+
+#leaders-desc , #gallery p {
+  font-size: 16px;
+  line-height: 30px;
+  width: 75%;
+  margin: 50px auto;
+}
+
+#leaders .leader-cont {
+  width: 75%;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+#leaders .leader-cont .leader-img {
+  background-color: #bfc7cb;
+  width: 100%;
+  height: auto;
+}
+
+#leaders .leader-cont h3 {
+  font-family: Merriweather, serif;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 33px auto 20px auto;
+}
+
+#leaders .leader-cont p {
+  font-size: 15px;
+  margin: 0 0 50px 0;
+}
+
+/* Advantages */
+
+#advantages {
+  background-color: #1f3138;
+  text-align: center;
+}
+
+#advan-cont {
+  margin: auto;
+  width: 75%;
+}
+
+#advan-cont ul {
+  width: 100%;
+  padding-left: 0;
+  float: left;
+  list-style-type: none;
+}
+
+#advan-cont ul li:first-child {
+  color: #88543b;
+  font-size: 52px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+#advan-cont ul li:last-child {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+#advantages img {
+  width: 100%;
+  height: auto;
+  margin-bottom: -5px;
+}
+
+/* Contact us */
+
+#contact-us {
+  position: relative;
+}
+
+#contact-us::before {
+  content: "";
+  background-color: #2a3e47;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.9;
+  position: absolute;
+  z-index: -1;
+}
+
+#contact-us::after {
+  content: "";
+  background-image: url('assets/img/contact-us-02.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -2;
+}
+
+#contact-us h1 , #contact-us p {
+  text-align: center;
+}
+
+#contact-us h1 {
+  font-size: 24px;
+  font-family: Merriweather, serif;
+  margin-top: 0;
+  color: #fff;
+}
+
+#contact-us p {
+  width: 75%;
+  color: #c0c0c0;
+  margin: 25px auto 100px auto;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+#contact-us form {
+  width: 70%;
+  margin: auto;
+}
+
+#contact-us form input , #contact-us form textarea , #contact-us form input[type="email"] {
+  width: 100%;
+  max-width: 100%;
+  font-size: 15px;
+}
+
+#contact-us form input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #bfbfbf;
+  color: #8f8f8f;
+  padding: 6px;
+  margin: 0 5% 60px 0;
+}
+
+#contact-us form textarea {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #bfbfbf;
+  color: #8f8f8f;
+  height: 150px;
+  margin-bottom: 30px;
+}
+
+#contact-us form input[type="submit"] {
+  margin: 20px 0 0 0;
+  color: #fff;
+  background-color: #89553b;
+  border: 0;
+  padding: 10px;
+  text-align: center;
+  width: 25%;
+}
+
+/* Custom select */
+.custom-select {
+  position: relative; /* The container must be positioned relative. */
+  width: 100%; /* Remember to set the width. */
+  display: inline-block;
+  font-size: 15px;
+  margin: 0 0 60px 0;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #bfbfbf;
+  color: #8f8f8f;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #8f8f8f transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #8f8f8f transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div , .select-selected {
+  color: #8f8f8f;
+  padding: 5px;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #bfbfbf;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover , .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Custom select end*/
+
+/* About us */
+
+#about-us {
+  text-align: center;
+  position: relative;
+  padding-right: 2.5%;
+  padding-left: 2.5%;
+}
+
+#about-us::before {
+  content: "";
+  background-color: #eee;
+  background-image: url("assets/img/about-us-01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+#meeting {
+  width: 85%;
+  height: auto;
+  background-color: #eee;
+  margin-bottom: 10px;
+}
+
+#about {
+  background-color: #f9f9fb;
+  width: 85%;
+  border: 1px solid #d2d3d7;
+  padding: 20px 10px 10px 10px;
+  text-align: center;
+  margin: auto;
+}
+
+#about h2 {
+  font-family: Merriweather, serif;
+  font-size: 32px;
+}
+
+#about p {
+  width: 90%;
+  margin: 10px auto 40px auto;
+  font-size: 15px;
+  line-height: 20px;
+  color: #3d3d3d;
+}
+
+#about .image-text {
+  width: 75%;
+  margin: auto;
+}
+
+#about .image-text img {
+  width: 70%;
+  height: auto;
+  border-radius: 50%;
+}
+
+#about .image-text h5 {
+  border: 2px solid #323648;
+  font-weight: normal;
+  font-size: 16px;
+  width: 90%;
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#about .image-text .vl {
+  border-left: 2px solid #323648;
+  height: 20px;
+  margin: -5px 0 -27px 50%;
+}
+
+/* Gallery */
+
+#gallery {
+  text-align: center;
+  padding-bottom: 0;
+}
+
+/* Top footer */
+
+#top-footer {
+  padding: 40px;
+  background-color: #1b2c33;
+  overflow: hidden;
+}
+
+#top-footer div {
+  width: 100%;
+  float: left;
+  color: #d2d3d7;
+  padding-right: 15px;
+}
+
+#top-footer div h3 {
+  font-family: Merriweather, serif;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+#top-footer div ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#top-footer div ul li {
+  padding: 9px 0;
+}
+
+#top-footer div ul li a {
+  font-size: 16px;
+  color: #d2d3d7;
+  text-decoration: none;
+}
+
+#top-footer div ul li a:hover {
+  text-decoration: underline;
+}
+
+#top-footer div p {
+  font-size: 14px;
+}
+
+#top-footer div p i {
+  padding: 10px;
+}
+
+/* Bottom footer */
+
+#bottom-footer {
+  Padding: 32px 16px;
+  background-color: #000;
+  color: #cdcbcb;
+  overflow: hidden;
+  text-align: center;
+}
+
+#bottom-footer p {
+  line-height: 25px;
+  font-size: 16px;
+  margin: 0 0 24px;
+}
+
+#bottom-footer i {
+  font-size: 22px;
+  color: #fff;
+  padding: 7px 0;
+  width: 35px;
+  border: 1px solid #fff;
+  margin: 0 3px;
+}
+
+#bottom-footer i:hover {
+  color: #999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 576px) {
+
+  /* Back to top button */
+
+  #back-to-top {
+    bottom: 20px;
+    left: 20px;
+  }
+
+  /* Main header */
+
+  #main-header {
+    text-align: left;
+    margin: 32px 40px;
+  }
+
+  /* Title section */
+
+  #welcome h2 {
+    font-size: 36px;
+  }
+
+  #welcome h3 {
+    font-size: 24px;
+  }
+
+  /* Advantages */
+
+  #advan-cont {
+    width: 95%;
+  }
+
+  #advan-cont ul {
+    padding-left: 0px;
+  }
+
+  #advan-cont ul li:first-child {
+    font-size: 42px;
+  }
+
+  #advan-cont ul li:last-child {
+    font-size: 16px;
+  }
+
+  /* Contact us */
+
+  #contact-us form {
+    width: 80%;
+  }
+
+  /* About us */
+
+  #meeting {
+    width: 85%;
+    margin-bottom: 10px;
+  }
+
+  #about {
+    width: 85%;
+    float: unset;
+    margin: auto;
+  }
+
+  #about p {
+    width: 90%;
+  }
+
+  /* Top footer */
+
+  #top-footer div {
+    width: 25%;
+  }
+
+  #top-footer div:nth-last-child(2) {
+    width: 100%;
+  }
+
+  #top-footer div:nth-last-child(2) p {
+    float: left;
+    width: 50%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+  /* Back to top button */
+
+  #back-to-top {
+    bottom: 20px;
+    left: 30px;
+  }
+
+  /* Title section */
+
+  #title .fas.fa-bars {
+    display: none;
+  }
+
+  #title nav menu {
+    background: rgba(31, 49, 56, 0.5);
+    padding: 0;
+    left: 0;
+    top: 0;
+    display: block !important;
+  }
+
+  #title nav menu li:first-child {
+    margin-left: 20px;
+  }
+
+  #title nav menu li a {
+    padding: 20px;
+    float: left;
+  }
+
+  #title a:hover {
+    background: rgba(0,179,240,0.2);
+  }
+
+  #welcome h2 {
+    font-size: 48px;
+  }
+
+  #welcome h3 {
+    font-size: 32px;
+  }
+
+  /* Team leaders */
+
+  #leaders h1 , #gallery h1, #contact-us h1 {
+    font-size: 40px;
+  }
+
+  #leaders hr , #gallery hr {
+    width: 300px;
+  }
+
+  #leaders-desc , #gallery p {
+    font-size: 21px;
+    margin: 50px auto 90px auto;
+  }
+
+  #leaders .leader-cont {
+    width: 25%;
+  }
+
+  #leaders .leader-cont h3 {
+    margin: 33px auto 36px auto;
+  }
+
+  #leaders .leader-cont p {
+    font-size: 15px;
+    margin: 0;
+  }
+
+  /* Advantages */
+
+  #advan-cont ul {
+    width: 25%;
+  }
+
+  /* Contact us */
+
+  #contact-us p {
+    width: 65%;
+    font-size: 21px;
+  }
+
+  #contact-us form input {
+    width: 45%;
+    font-size: 16px;
+  }
+
+  #contact-us form input[type="email"] {
+     width: 96% !important;
+  }
+
+  #contact-us form textarea {
+    width: 97.5%;
+    max-width: 97.5%;
+    font-size: 16px;
+  }
+
+  #contact-us form input[type="submit"] {
+    margin: 0 10px 0 0;
+    float: right;
+  }
+
+  /* Custom select */
+  .custom-select {
+    width: 45%; /* Remember to set the width. */
+    font-size: 16px;
+  }
+
+  /* About us */
+
+  #meeting {
+    width: 45%;
+  }
+
+  #about {
+    width: 50%;
+    float: right;
+    margin: 3.5% 0 0 0;
+  }
+
+  #about p {
+    width: 80%;
+  }
+
+  #about .image-text {
+    float: left;
+    width: 33.3%;
+  }
+
+  /* Top footer */
+
+  #top-footer div {
+    width: 20%;
+  }
+
+  #top-footer div ul li {
+    padding: 6px 0;
+  }
+
+  #top-footer div:nth-last-child(2) {
+    width: 20%;
+  }
+
+  #top-footer div:nth-last-child(2) p {
+    float: unset;
+    width: unset;
+  }
+
+  /* Bottom footer */
+
+  #bottom-footer {
+    Padding-right: 88px;
+    Padding-left: 88px;
+  }
+
+  #bottom-footer p {
+    float: left;
+    margin: 0;
+  }
+
+  #bottom-footer div {
+    float: right;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 992px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+}

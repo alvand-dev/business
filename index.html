@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="HTML Website Template For Your Business">
+  <meta name="author" content="Mohammad Ahmadian">
+  <link rel="icon" type="image/png" href="assets/img/logo-1.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/fonts/fontawesome/css/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/fonts/fontawesome/css/brands.min.css">
+  <link rel="stylesheet" href="assets/fonts/fontawesome/css/solid.min.css">
+  <link rel="stylesheet" href="assets/css/splide-core.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans">
+  <script src="assets/js/back-to-top.js" defer></script>
+  <script src="assets/js/top-nav.js" defer></script>
+  <script src="assets/js/custom-select-box.js" defer></script>
+  <script src="assets/js/slider.js" defer></script>
+  <script src="assets/js/splide.min.js" defer></script>
+  <title>Alvand | Web Development Company</title>
+</head>
+<body>
+
+<!-- Back to top button -->
+<i class="fas fa-angle-double-up" id="back-to-top" onclick="backToTop.top();"></i>
+
+<!-- Main header -->
+<header id="main-header"><a href="#"><h1>Alvand Company</h1></a></header>
+
+<!-- Title section -->
+<section id="title">
+  <i class="fas fa-bars" onclick="topNav.toggle();"></i>
+  <nav>
+    <menu id="top-menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#leaders">Leaders</a></li>
+      <li><a href="#advantages">Advantages</a></li>
+      <li><a href="#contact-us">Contact</a></li>
+      <li><a href="#about-us">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+    </menu>
+  </nav>
+  <img src="assets/img/company-01.jpg" alt="Company building">
+  <header id="welcome">
+    <h2>WELCOME TO</h2>
+    <h3>Our Website</h3>
+  </header>
+</section>
+
+<!-- Team leaders -->
+<section id="leaders">
+  <h1>OUR TEAM LEADERS</h1>
+  <hr>
+  <p id="leaders-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <div class="leader-cont">
+    <img class="leader-img" src="assets/img/leader-01.jpg" alt="Hugo Silva" title="Chief Executive Officer">
+    <h3>Hugo Silva</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+  </div>
+  <div class="leader-cont">
+    <img class="leader-img" src="assets/img/leader-02.jpg" alt="Imanol Arias" title="Chief Operating Officer">
+    <h3>Imanol Arias</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+  </div>
+  <div class="leader-cont">
+    <img class="leader-img" src="assets/img/leader-03.jpg" alt="Javier Bardem" title="Chief Financial Officer">
+    <h3>Javier Bardem</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+  </div>
+  <div class="clear"></div>
+</section>
+
+<!-- Advantages -->
+<section id="advantages">
+  <div id="advan-cont">
+    <ul>
+      <li>2500</li>
+      <li>HAPPY CLIENTS</li>
+    </ul>
+    <ul>
+      <li>300</li>
+      <li>FULL NOTEBOOKS</li>
+    </ul>
+    <ul>
+      <li>120</li>
+      <li>TEAMMATES</li>
+    </ul>
+    <ul>
+      <li>30</li>
+      <li>STORES</li>
+    </ul>
+    <div class="clear"></div>
+  </div>
+  <img src="assets/img/company-02.jpg" alt="Company employees are working">
+</section>
+
+<!-- Contact us -->
+<section id="contact-us">
+  <h1>CONTACT US</h1>
+  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+accusantium doloremque laudantium, totam rem aperiam</p>
+  <form action="#" method="post">
+    <input type="text" id="fullname" name="fname" placeholder="Name" required>
+    <!-- Surround the select box within a "custom-select" DIV element. -->
+    <div class="custom-select" id="fcategory" name="fcategory">
+      <select required>
+        <option value="0" disabled selected>Category</option>
+        <option value="financial">Financial</option>
+        <option value="technical">Technical</option>
+        <option value="feedback">Feedback</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <input type="tel" id="ftel" name="ftel" placeholder="Phone" required>
+    <!-- Surround the select box within a "custom-select" DIV element. -->
+    <div class="custom-select" id="fcity" name="fcity">
+      <select required>
+        <option value="0" disabled selected>City</option>
+        <option value="Tehran">Tehran</option>
+       <option value="Other">Other</option>
+      </select>
+    </div>
+    <input type="email" id="femail" name="femail" placeholder="Email" required>
+    <textarea placeholder="Message" id="fmessage" name="message" required></textarea>
+    <input type="submit" id="fsubmit" value="Send">
+    <div class="clear"></div>
+  </form>
+</section>
+
+<!-- About us -->
+<section id="about-us">
+  <img id="meeting" src="assets/img/meeting-01.jpg" alt="A meeting in the company">
+  <div id="about">
+    <h2>ABOUT US</h2>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+    <div class="image-text">
+      <img src="assets/img/FRIENDLY-TEAM-01.jpg" alt="FRIENDLY TEAM">
+      <div class="vl"></div>
+      <h5>FRIENDLY TEAM</h5>
+    </div>
+    <div class="image-text">
+      <img src="assets/img/involved-01.jpg" alt="INVOLVED">
+      <div class="vl"></div>
+      <h5>INVOLVED</h5>
+    </div>
+    <div class="image-text">
+      <img src="assets/img/24-7-ASSISTANCE-01.jpg" alt="24/7 ASSISTANCE">
+      <div class="vl"></div>
+      <h5>24/7 ASSISTANCE</h5>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="clear"></div>
+</section>
+
+<!-- Gallery -->
+<section id="gallery" class="splide">
+  <h1>OUR GALLERY</h1>
+  <hr>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide"><a href="assets/img/business-01.jpg"><img  src="assets/img/business-01.jpg" alt="Business woman"></a></li>
+      <li class="splide__slide"><a href="assets/img/business-02.jpg"><img src="assets/img/business-02.jpg" alt="A man working"></a></li>
+      <li class="splide__slide"><a href="assets/img/business-03.jpg"><img src="assets/img/business-03.jpg" alt="A man walking"></a></li>
+      <li class="splide__slide"><a href="assets/img/business-04.jpg"><img src="assets/img/business-04.jpg" alt="A man in suit"></a></li>
+      <li class="splide__slide"><a href="assets/img/business-05.jpg"><img src="assets/img/business-05.jpg" alt="Company buildings"></a></li>
+      <li class="splide__slide"><a href="assets/img/business-06.jpg"><img src="assets/img/business-06.jpg" alt="Laptop"></a></li>
+      <li class="splide__slide"><a href="assets/img/business-07.jpg"><img src="assets/img/business-07.jpg" alt="Business Man"></a></li>
+    </ul>
+    <!--
+    <div class="column">
+      <a href="assets/img/business-01.jpg"><img  src="assets/img/business-01.jpg" alt="Business woman"></a>
+    </div>
+    <div class="column">
+      <a href="assets/img/business-02.jpg"><img src="assets/img/business-02.jpg" alt="A man working"></a>
+    </div>
+    <div class="column">
+      <a href="assets/img/business-03.jpg"><img src="assets/img/business-03.jpg" alt="A man walking"></a>
+    </div>
+    <div class="column">
+      <a href="assets/img/business-04.jpg"><img src="assets/img/business-04.jpg" alt="A man in suit"></a>
+    </div>
+    <div class="column">
+      <a href="assets/img/business-05.jpg"><img class="demo" src="assets/img/business-05.jpg" alt="Company buildings"></a>
+    </div>
+    <div class="column">
+      <a href="assets/img/business-06.jpg"><img src="assets/img/business-06.jpg" alt="Laptop"></a>
+    </div>
+    <div class="column">
+      <a href="assets/img/business-07.jpg"><img src="assets/img/business-07.jpg" alt="Business Man"></a>
+    </div>
+    -->
+  </div>
+  <div class="splide__arrows">
+    <span class="splide__arrow splide__arrow--prev"><i class="fas fa-angle-left"></i></span>
+    <span class="splide__arrow splide__arrow--next"><i class="fas fa-angle-right"></i></span>
+  </div>
+  <div class="clear"></div>
+</section>
+
+<!-- TOP FOOTER -->
+<footer id="top-footer">
+  <div>
+    <h3>Content</h3>
+    <ul>
+      <li><a href="#">Lorem ipsum</a></li>
+      <li><a href="#">Dolor sit</a></li>
+    </ul>
+  </div>
+  <div>
+    <h3>INFORMATION</h3>
+    <ul>
+      <li><a href="#">Lorem ipsum</a></li>
+      <li><a href="#">Onsectetur adipisicing</a></li>
+    </ul>
+  </div>
+  <div>
+    <h3>LEGAL</h3>
+    <ul>
+      <li><a href="#">Adipisicing elit</a></li>
+      <li><a href="#">Sed do eiusmod</a></li>
+      <li><a href="#">Tempor incidi</a></li>
+    </ul>
+  </div>
+  <div>
+    <h3>HELP</h3>
+    <ul>
+      <li><a href="#">Lorem ipsum</a></li>
+      <li><a href="#">Onsectetur adipisicing</a></li>
+    </ul>
+  </div>
+  <div>
+    <p title="Phone number"><i class="fas fa-phone fa-flip-horizontal"></i>3-6000-0000-6000-000-0000</p>
+    <p title="Address"><i class="fas fa-map-marker-alt"></i> 67700 Dagenham St England, GB</p>
+  </div>
+  <div class="clear"></div>
+</footer>
+<!-- TOP FOOTER END -->
+
+<!-- BOTTOM FOOTER -->
+<footer id="bottom-footer">
+  <p>Copyright &copy; 2021 Alvand Company. All rights reserved.</p>
+  <div>
+    <a href="#"><i class="fab fa-facebook-f" title="Facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter-square" title="Twitter"></i></a>
+    <a href="#"><i class="fab fa-instagram" title="Instagram"></i></a>
+    <a href="#"><i class="fab fa-linkedin" title="Linkedin"></i></a>
+  </div>
+  <div class="clear"></div>
+</footer>
+<!-- BOTTOM FOOTER END -->
+
+<noscript>Your web browser does not support JavaScript or this feature is turned off. Please open the page in another browser or turn on JavaScript to use the full capabilities of this website.</noscript>
+
+</body>
+</html>
