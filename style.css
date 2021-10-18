@@ -59,7 +59,6 @@ noscript {
 }
 
 #main-header a h1 {
-  font-family: Merriweather, serif;
   font-size: 18px;
 }
 
@@ -116,22 +115,7 @@ noscript {
 }
 
 #welcome {
-  position: absolute;
-  right: 10%;
-  bottom: 10%;
-  text-align: center;
-}
-
-#welcome h2 {
-  color: #fcf9f7;
-  font-size: 18px;
-  margin-bottom: 14px;
-}
-
-#welcome h3 {
-  color: #d7794a;
-  font-size: 16px;
-  margin-top: 0px;
+  display: none;
 }
 
 /* Team leaders */
@@ -176,8 +160,6 @@ noscript {
 }
 
 #leaders .leader-cont h3 {
-  font-family: Merriweather, serif;
-  font-size: 18px;
   margin: 33px auto 20px auto;
 }
 
@@ -480,7 +462,6 @@ noscript {
 }
 
 #top-footer div h3 {
-  font-family: Merriweather, serif;
   font-size: 18px;
 }
 
@@ -594,12 +575,24 @@ noscript {
     font-size: 18px;
   }
 
+  #welcome {
+    display: block;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    text-align: center;
+  }
+
   #welcome h2 {
+    color: #fcf9f7;
     font-size: 24px;
+    margin-bottom: 14px;
   }
 
   #welcome h3 {
+    color: #d7794a;
     font-size: 18px;
+    margin-top: 0px;
   }
 
   /* Team leaders */
@@ -903,7 +896,7 @@ noscript {
   /* Leaders section */
 
   #leaders h2, #gallery h2, #contact-us h2 {
-    font-size: 48px;
+    font-size: 42px;
   }
 
 }
