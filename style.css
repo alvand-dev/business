@@ -156,11 +156,6 @@ noscript {
   font-size: 24px;
 }
 
-#leaders hr , #gallery hr {
-  width: 150px;
-  border-color: #88543a;
-}
-
 #leaders-desc , #gallery p {
   font-size: 16px;
   line-height: 30px;
@@ -730,10 +725,6 @@ noscript {
 
   #leaders h2, #gallery h2, #contact-us h2, #about h2 {
     font-size: 36px;
-  }
-
-  #leaders hr , #gallery hr {
-    width: 300px;
   }
 
   #leaders-desc , #gallery p {
