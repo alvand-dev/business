@@ -129,11 +129,9 @@ noscript {
   padding: 72px 0;
 }
 
-#leaders h2 , #gallery h2 {
+#leaders h2, #gallery h2 {
   color: #a95e39;
-  margin: 0 auto 26px auto;
-  padding-top: 0;
-  padding-bottom: 0;
+  margin: 0;
 }
 
 #leaders h2, #gallery h2, #contact-us h2, #about h2 {
@@ -141,7 +139,6 @@ noscript {
 }
 
 #leaders-desc , #gallery p {
-  font-size: 16px;
   line-height: 30px;
   width: 75%;
   margin: 50px auto;
@@ -166,6 +163,7 @@ noscript {
 #leaders .leader-cont p {
   font-size: 15px;
   margin: 0 0 50px 0;
+  line-height: 24px;
 }
 
 /* Advantages */
@@ -243,15 +241,14 @@ noscript {
 }
 
 #contact-us h2 {
-  margin-top: 0;
+  margin: 0;
   color: #fff;
 }
 
 #contact-us p {
   width: 75%;
   color: #c0c0c0;
-  margin: 25px auto 100px auto;
-  font-size: 16px;
+  margin: 50px auto;
   line-height: 30px;
 }
 
@@ -405,11 +402,15 @@ noscript {
   margin: auto;
 }
 
+#about h2{
+  margin-bottom: 0;
+}
+
 #about p {
   width: 90%;
-  margin: 10px auto 40px auto;
+  margin: 25px auto;
   font-size: 15px;
-  line-height: 20px;
+  line-height: 24px;
   color: #3d3d3d;
 }
 
@@ -426,7 +427,6 @@ noscript {
 
 #about .image-text h5 {
   border: 2px solid #323648;
-  font-size: 16px;
   width: 90%;
   padding: 10px;
   margin-right: auto;
@@ -720,8 +720,8 @@ noscript {
     font-size: 36px;
   }
 
-  #leaders-desc , #gallery p {
-    font-size: 21px;
+  #leaders-desc, #gallery p {
+    font-size: 18px;
     margin: 50px auto 90px auto;
   }
 
@@ -734,7 +734,6 @@ noscript {
   }
 
   #leaders .leader-cont p {
-    font-size: 15px;
     margin: 0;
   }
 
@@ -748,7 +747,7 @@ noscript {
 
   #contact-us p {
     width: 65%;
-    font-size: 21px;
+    font-size: 18px;
   }
 
   #contact-us form input {
