@@ -34,12 +34,12 @@
   <i class="fas fa-bars" onclick="topNav.toggle();"></i>
   <nav>
     <menu id="top-menu">
-      <li><a href="#">Home</a></li>
-      <li><a href="#leaders">Leaders</a></li>
-      <li><a href="#advantages">Advantages</a></li>
-      <li><a href="#contact-us">Contact</a></li>
-      <li><a href="#about-us">About</a></li>
-      <li><a href="#gallery">Gallery</a></li>
+      <li><a class="top-menu-link" href="#">Home</a></li>
+      <li><a class="top-menu-link" href="#leaders">Leaders</a></li>
+      <li><a class="top-menu-link" href="#advantages">Advantages</a></li>
+      <li><a class="top-menu-link" href="#contact-us">Contact</a></li>
+      <li><a class="top-menu-link" href="#about-us">About</a></li>
+      <li><a class="top-menu-link" href="#gallery">Gallery</a></li>
     </menu>
   </nav>
   <img src="assets/img/company-01.jpg" alt="Company building">
@@ -123,7 +123,8 @@ accusantium doloremque laudantium, totam rem aperiam</p>
       </select>
     </div>
     <input type="email" id="femail" name="femail" placeholder="Email" required>
-    <textarea placeholder="Message" id="fmessage" name="message" required></textarea>
+    <textarea placeholder="Message" id="fmessage" name="message" required>
+    </textarea>
     <input type="submit" id="fsubmit" value="Send">
     <div class="clear"></div>
   </form>
@@ -162,41 +163,50 @@ accusantium doloremque laudantium, totam rem aperiam</p>
   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
   <div class="splide__track">
     <ul class="splide__list">
-      <li class="splide__slide"><a href="assets/img/business-01.jpg"><img  src="assets/img/business-01.jpg" alt="Business woman"></a></li>
-      <li class="splide__slide"><a href="assets/img/business-02.jpg"><img src="assets/img/business-02.jpg" alt="A man working"></a></li>
-      <li class="splide__slide"><a href="assets/img/business-03.jpg"><img src="assets/img/business-03.jpg" alt="A man walking"></a></li>
-      <li class="splide__slide"><a href="assets/img/business-04.jpg"><img src="assets/img/business-04.jpg" alt="A man in suit"></a></li>
-      <li class="splide__slide"><a href="assets/img/business-05.jpg"><img src="assets/img/business-05.jpg" alt="Company buildings"></a></li>
-      <li class="splide__slide"><a href="assets/img/business-06.jpg"><img src="assets/img/business-06.jpg" alt="Laptop"></a></li>
-      <li class="splide__slide"><a href="assets/img/business-07.jpg"><img src="assets/img/business-07.jpg" alt="Business Man"></a></li>
+      <li class="splide__slide">
+        <a href="assets/img/business-01.jpg">
+          <img  src="assets/img/business-01.jpg" alt="Business woman">
+        </a>
+      </li>
+      <li class="splide__slide">
+        <a href="assets/img/business-02.jpg">
+          <img src="assets/img/business-02.jpg" alt="A man working">
+        </a>
+      </li>
+      <li class="splide__slide">
+        <a href="assets/img/business-03.jpg">
+          <img src="assets/img/business-03.jpg" alt="A man walking">
+        </a>
+      </li>
+      <li class="splide__slide">
+        <a href="assets/img/business-04.jpg">
+          <img src="assets/img/business-04.jpg" alt="A man in suit">
+        </a>
+      </li>
+      <li class="splide__slide">
+        <a href="assets/img/business-05.jpg">
+          <img src="assets/img/business-05.jpg" alt="Company buildings">
+        </a>
+      </li>
+      <li class="splide__slide">
+        <a href="assets/img/business-06.jpg">
+          <img src="assets/img/business-06.jpg" alt="Laptop">
+        </a>
+      </li>
+      <li class="splide__slide">
+        <a href="assets/img/business-07.jpg">
+          <img src="assets/img/business-07.jpg" alt="Business Man">
+        </a>
+      </li>
     </ul>
-    <!--
-    <div class="column">
-      <a href="assets/img/business-01.jpg"><img  src="assets/img/business-01.jpg" alt="Business woman"></a>
-    </div>
-    <div class="column">
-      <a href="assets/img/business-02.jpg"><img src="assets/img/business-02.jpg" alt="A man working"></a>
-    </div>
-    <div class="column">
-      <a href="assets/img/business-03.jpg"><img src="assets/img/business-03.jpg" alt="A man walking"></a>
-    </div>
-    <div class="column">
-      <a href="assets/img/business-04.jpg"><img src="assets/img/business-04.jpg" alt="A man in suit"></a>
-    </div>
-    <div class="column">
-      <a href="assets/img/business-05.jpg"><img class="demo" src="assets/img/business-05.jpg" alt="Company buildings"></a>
-    </div>
-    <div class="column">
-      <a href="assets/img/business-06.jpg"><img src="assets/img/business-06.jpg" alt="Laptop"></a>
-    </div>
-    <div class="column">
-      <a href="assets/img/business-07.jpg"><img src="assets/img/business-07.jpg" alt="Business Man"></a>
-    </div>
-    -->
   </div>
   <div class="splide__arrows">
-    <span class="splide__arrow splide__arrow--prev"><i class="fas fa-angle-left"></i></span>
-    <span class="splide__arrow splide__arrow--next"><i class="fas fa-angle-right"></i></span>
+    <span class="splide__arrow splide__arrow--prev">
+      <i class="fas fa-angle-left"></i>
+    </span>
+    <span class="splide__arrow splide__arrow--next">
+      <i class="fas fa-angle-right"></i>
+    </span>
   </div>
   <div class="clear"></div>
 </section>
@@ -233,8 +243,12 @@ accusantium doloremque laudantium, totam rem aperiam</p>
     </ul>
   </div>
   <div>
-    <p title="Phone number"><i class="fas fa-phone fa-flip-horizontal"></i>3-6000-0000-6000-000-0000</p>
-    <p title="Address"><i class="fas fa-map-marker-alt"></i> 67700 Dagenham St England, GB</p>
+    <p title="Phone number">
+      <i class="fas fa-phone fa-flip-horizontal"></i>3-6000-0000-6000-000-0000
+    </p>
+    <p title="Address">
+      <i class="fas fa-map-marker-alt"></i> 67700 Dagenham St England, GB
+    </p>
   </div>
   <div class="clear"></div>
 </footer>
