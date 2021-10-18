@@ -11,6 +11,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: Merriweather, serif;
   font-weight: normal;
 }
 
@@ -123,7 +124,6 @@ noscript {
 
 #welcome h2 {
   color: #fcf9f7;
-  font-family: Merriweather, serif;
   font-size: 18px;
   margin-bottom: 14px;
 }
@@ -145,15 +145,14 @@ noscript {
   padding: 72px 0;
 }
 
-#leaders h1 , #gallery h1 {
+#leaders h2 , #gallery h2 {
   color: #a95e39;
-  font-family: Merriweather, serif;
   margin: 0 auto 26px auto;
   padding-top: 0;
   padding-bottom: 0;
 }
 
-#leaders h1 , #gallery h1 , #about div h2 {
+#leaders h2, #gallery h2, #contact-us h2, #about h2 {
   font-size: 24px;
 }
 
@@ -262,13 +261,11 @@ noscript {
   z-index: -2;
 }
 
-#contact-us h1 , #contact-us p {
+#contact-us h2 , #contact-us p {
   text-align: center;
 }
 
-#contact-us h1 {
-  font-size: 24px;
-  font-family: Merriweather, serif;
+#contact-us h2 {
   margin-top: 0;
   color: #fff;
 }
@@ -429,11 +426,6 @@ noscript {
   padding: 20px 10px 10px 10px;
   text-align: center;
   margin: auto;
-}
-
-#about h2 {
-  font-family: Merriweather, serif;
-  font-size: 32px;
 }
 
 #about p {
@@ -730,7 +722,7 @@ noscript {
 
   /* Team leaders */
 
-  #leaders h1 , #gallery h1, #contact-us h1 {
+  #leaders h2 , #gallery h2, #contact-us h2 {
     font-size: 40px;
   }
 
