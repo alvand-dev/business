@@ -70,30 +70,37 @@ noscript {
 
 #title .fas.fa-bars, #title .fas.fa-times {
   display: block;
-  position: absolute;
-  left: 0;
-  top:  0;
-  color: #e8e6e6;
+  position: fixed;
+  right: 5px;
+  top:  5px;
+  background-color: rgba(31, 49, 56, 0.95);
+  color: #fff;
   z-index: 9;
   font-size: 17px;
-  padding: 8px;
+  padding: 4px;
   cursor: pointer;
-  background-color: rgba(0,0,0,0.4);
 }
 
 #title .fas.fa-bars:hover, #title .fas.fa-times:hover {
-  background-color: rgba(0,0,0,0.6);
+  color: #ccc;
+}
+
+#title .fas.fa-times {
+  background-color: unset;
 }
 
 #title nav menu {
-  background: rgba(31, 49, 56, 0.95);
+  background-color: rgba(31, 49, 56, 0.95);
   margin: 0;
-  padding: 40px 0 10px;
+  padding: 40px 0;
   list-style-type: none;
   display: none;
   width: 100%;
-  position: absolute;
+  height: 100%;
+  position: fixed;
+  top: 0;
   z-index: 1;
+  overflow-y: scroll;
 }
 
 #title nav menu li a {
@@ -102,6 +109,7 @@ noscript {
   font-size: 15px;
   padding: 20px 16px;
   display: block;
+  text-align: center;
 }
 
 #title nav menu li a:hover {
@@ -870,9 +878,10 @@ noscript {
   #title nav menu {
     background: rgba(31, 49, 56, 0.5);
     padding: 0;
-    left: 0;
-    top: 0;
     display: block !important;
+    height: auto;
+    position: absolute;
+    overflow-y: hidden;
   }
 
   #title nav menu li:first-child {
