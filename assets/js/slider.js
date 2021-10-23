@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   new Splide('#gallery', {
     type: 'loop',
-    height: '766px',
     perPage: 5,
     perMove: 1,
     pagination: false,
