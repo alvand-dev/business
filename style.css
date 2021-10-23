@@ -445,7 +445,7 @@ noscript {
 #about .image-text .vl {
   border-left: 2px solid #323648;
   height: 20px;
-  margin: -5px 0 -27px 50%;
+  margin: -5px 0 -24px 50%;
 }
 
 /* Gallery */
@@ -610,23 +610,6 @@ noscript {
     font-size: 30px;
   }
 
-  /* About us */
-
-  #meeting {
-    width: 85%;
-    margin-bottom: 10px;
-  }
-
-  #about {
-    width: 85%;
-    float: unset;
-    margin: auto;
-  }
-
-  #about p {
-    width: 90%;
-  }
-
   /* Top footer */
 
   #top-footer div {
@@ -774,27 +757,6 @@ noscript {
     font-size: 16px;
   }
 
-  /* About us */
-
-  #meeting {
-    width: 45%;
-  }
-
-  #about {
-    width: 50%;
-    float: right;
-    margin: 3.5% 0 0 0;
-  }
-
-  #about p {
-    width: 80%;
-  }
-
-  #about .image-text {
-    float: left;
-    width: 33.3%;
-  }
-
   /* Top footer */
 
   #top-footer div {
@@ -895,6 +857,27 @@ noscript {
 
   #leaders h2, #gallery h2, #contact-us h2 {
     font-size: 42px;
+  }
+
+  /* About us */
+
+  #meeting {
+    width: 45%;
+  }
+
+  #about {
+    width: 50%;
+    float: right;
+    margin: 3.5% 0 0 0;
+  }
+
+  #about p {
+    width: 80%;
+  }
+
+  #about .image-text {
+    float: left;
+    width: 33.3%;
   }
 
 }
