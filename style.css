@@ -609,24 +609,6 @@ noscript {
     font-size: 30px;
   }
 
-  /* Advantages */
-
-  #advan-cont {
-    width: 95%;
-  }
-
-  #advan-cont ul {
-    padding-left: 0px;
-  }
-
-  #advan-cont ul li:first-child {
-    font-size: 42px;
-  }
-
-  #advan-cont ul li:last-child {
-    font-size: 16px;
-  }
-
   /* Contact us */
 
   #contact-us form {
@@ -747,8 +729,21 @@ noscript {
 
   /* Advantages */
 
+  #advan-cont {
+    width: 95%;
+  }
+
   #advan-cont ul {
+    padding-left: 0px;
     width: 25%;
+  }
+
+  #advan-cont ul li:first-child {
+    font-size: 42px;
+  }
+
+  #advan-cont ul li:last-child {
+    font-size: 16px;
   }
 
   /* Contact us */
@@ -935,5 +930,13 @@ noscript {
 
 
 @media only screen and (min-width: 1200px) {
+  /* Advantages */
 
+  #advan-cont ul li:first-child {
+    font-size: 52px;
+  }
+
+  #advan-cont ul li:last-child {
+    font-size: 18px;
+  }
 }
