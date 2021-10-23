@@ -262,6 +262,7 @@ noscript {
 
 #contact-us form {
   width: 70%;
+  max-width: 1024px;
   margin: auto;
 }
 
@@ -607,12 +608,6 @@ noscript {
 
   #leaders h2, #gallery h2, #contact-us h2, #about h2 {
     font-size: 30px;
-  }
-
-  /* Contact us */
-
-  #contact-us form {
-    width: 80%;
   }
 
   /* About us */
