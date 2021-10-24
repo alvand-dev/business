@@ -455,6 +455,40 @@ noscript {
   padding-bottom: 0;
 }
 
+#gallery .splide__slide img {
+  width: 100%;
+}
+
+#gallery .splide__arrows {
+    background-color: #d6d6d6;
+    height: 75px;
+}
+
+#gallery i.fas.fa-angle-right, #gallery i.fas.fa-angle-left {
+    background-color: #88543a;
+    font-size: 24px;
+    color: #b7afaa;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 50%;
+    margin: 10px;
+    padding: 0 0 0 2px;
+    cursor: pointer;
+    position: absolute;
+    right: 2vw;
+}
+
+#gallery i.fas.fa-angle-left {
+    background-color: unset;
+    color: #88543a;
+    border: 3px solid #88543a;
+    line-height: 49px;
+    padding: 0 2px 0 0;
+    right: unset;
+    left: 2vw;
+}
+
 /* Top footer */
 
 #top-footer {
@@ -908,6 +942,7 @@ noscript {
 
 
 @media only screen and (min-width: 1200px) {
+
   /* Advantages */
 
   #advan-cont ul li:first-child {
@@ -917,4 +952,5 @@ noscript {
   #advan-cont ul li:last-child {
     font-size: 18px;
   }
+
 }
