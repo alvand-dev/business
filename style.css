@@ -501,7 +501,6 @@ noscript {
   width: 100%;
   float: left;
   color: #d2d3d7;
-  padding-right: 15px;
 }
 
 #top-footer div h3 {
@@ -529,6 +528,16 @@ noscript {
 
 #top-footer div p {
   font-size: 14px;
+  margin: 8px auto;
+}
+
+#top-footer div p a{
+  color: #d2d3d7;
+  text-decoration: none;
+}
+
+#top-footer div p a:hover{
+  text-decoration: underline;
 }
 
 #top-footer div p i {
@@ -647,11 +656,16 @@ noscript {
   /* Top footer */
 
   #top-footer div {
-    width: 25%;
+    width: 50%;
+  }
+
+  #top-footer div:nth-child(odd) {
+    padding-right: 16px;
   }
 
   #top-footer div:nth-last-child(2) {
     width: 100%;
+    padding-right: 0;
   }
 
   #top-footer div:nth-last-child(2) p {
@@ -791,41 +805,6 @@ noscript {
     font-size: 16px;
   }
 
-  /* Top footer */
-
-  #top-footer div {
-    width: 20%;
-  }
-
-  #top-footer div ul li {
-    padding: 6px 0;
-  }
-
-  #top-footer div:nth-last-child(2) {
-    width: 20%;
-  }
-
-  #top-footer div:nth-last-child(2) p {
-    float: unset;
-    width: unset;
-  }
-
-  /* Bottom footer */
-
-  #bottom-footer {
-    Padding-right: 88px;
-    Padding-left: 88px;
-  }
-
-  #bottom-footer p {
-    float: left;
-    margin: 0;
-  }
-
-  #bottom-footer div {
-    float: right;
-  }
-
 }
 
 
@@ -914,6 +893,43 @@ noscript {
     width: 33.3%;
   }
 
+  /* Top footer */
+
+  #top-footer div {
+    width: 25%;
+    padding-right: 16px;
+  }
+
+  #top-footer div:nth-child(4) {
+    padding-right: 0;
+  }
+
+  #top-footer div ul li {
+    padding: 6px 0;
+  }
+
+  #top-footer div:nth-last-child(2) p {
+    float: unset;
+    width: unset;
+  }
+
+  /* Bottom footer */
+
+  #bottom-footer {
+    Padding-right: 88px;
+    Padding-left: 88px;
+  }
+
+  #bottom-footer p {
+    float: left;
+    margin: 0;
+    padding: 7px 7px 7px 0;
+  }
+
+  #bottom-footer div {
+    float: right;
+  }
+
 }
 
 
@@ -951,6 +967,20 @@ noscript {
 
   #advan-cont ul li:last-child {
     font-size: 18px;
+  }
+
+  /* Top footer */
+
+  #top-footer div {
+    width: 20%;
+  }
+
+  #top-footer div:nth-child(4) {
+    padding-right: 16px;
+  }
+
+  #top-footer div:nth-last-child(2) {
+    width: 20%;
   }
 
 }
