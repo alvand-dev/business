@@ -268,7 +268,6 @@ noscript {
 
 #contact-us form input , #contact-us form textarea , #contact-us form input[type="email"] {
   width: 100%;
-  max-width: 100%;
   font-size: 15px;
 }
 
@@ -785,7 +784,7 @@ noscript {
   }
 
   #contact-us form input[type="email"] {
-     width: 96% !important;
+     width: 96%;
   }
 
   #contact-us form textarea {
