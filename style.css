@@ -133,7 +133,7 @@ noscript {
   text-align: center;
 }
 
-#leaders, #advan-cont, #contact-us, #about-us, #gallery {
+#leaders, #advantages > div, #contact-us, #about-us, #gallery {
   padding: 72px 0;
 }
 
@@ -146,7 +146,7 @@ noscript {
   font-size: 24px;
 }
 
-#leaders-desc , #gallery p {
+#leaders > p , #gallery p {
   line-height: 30px;
   width: 75%;
   margin: 50px auto;
@@ -181,26 +181,26 @@ noscript {
   text-align: center;
 }
 
-#advan-cont {
+#advantages > div {
   margin: auto;
   width: 75%;
 }
 
-#advan-cont ul {
+#advantages > div ul {
   width: 100%;
   padding-left: 0;
   float: left;
   list-style-type: none;
 }
 
-#advan-cont ul li:first-child {
+#advantages > div ul li:first-child {
   color: #88543b;
   font-size: 52px;
   font-weight: bold;
   margin-bottom: 16px;
 }
 
-#advan-cont ul li:last-child {
+#advantages > div ul li:last-child {
   color: #ffffff;
   font-size: 18px;
 }
@@ -394,7 +394,7 @@ noscript {
   z-index: -1;
 }
 
-#meeting {
+#about-us > img {
   width: 85%;
   height: auto;
   background-color: #eee;
@@ -496,50 +496,50 @@ noscript {
   overflow: hidden;
 }
 
-#top-footer div {
+#top-footer .widget {
   width: 100%;
   float: left;
   color: #d2d3d7;
 }
 
-#top-footer div h3 {
+#top-footer .widget h3 {
   font-size: 18px;
 }
 
-#top-footer div ul {
+#top-footer .widget ul {
   list-style-type: none;
   padding: 0;
 }
 
-#top-footer div ul li {
+#top-footer .widget ul li {
   padding: 9px 0;
 }
 
-#top-footer div ul li a {
+#top-footer .widget ul li a {
   font-size: 16px;
   color: #d2d3d7;
   text-decoration: none;
 }
 
-#top-footer div ul li a:hover {
+#top-footer .widget ul li a:hover {
   text-decoration: underline;
 }
 
-#top-footer div p {
+#top-footer .widget p {
   font-size: 14px;
   margin: 8px auto;
 }
 
-#top-footer div p a{
+#top-footer .widget p a{
   color: #d2d3d7;
   text-decoration: none;
 }
 
-#top-footer div p a:hover{
+#top-footer .widget p a:hover{
   text-decoration: underline;
 }
 
-#top-footer div p i {
+#top-footer .widget p i {
   padding: 10px;
 }
 
@@ -559,7 +559,7 @@ noscript {
   margin: 0 0 24px;
 }
 
-#bottom-footer i {
+#bottom-footer div a i {
   font-size: 22px;
   color: #fff;
   padding: 7px 0;
@@ -568,7 +568,7 @@ noscript {
   margin: 0 3px;
 }
 
-#bottom-footer i:hover {
+#bottom-footer div a i:hover {
   color: #999;
 }
 
@@ -654,20 +654,20 @@ noscript {
 
   /* Top footer */
 
-  #top-footer div {
+  #top-footer .widget {
     width: 50%;
   }
 
-  #top-footer div:nth-child(odd) {
+  #top-footer .widget:nth-child(odd) {
     padding-right: 16px;
   }
 
-  #top-footer div:nth-last-child(2) {
+  #top-footer .widget:nth-last-child(2) {
     width: 100%;
     padding-right: 0;
   }
 
-  #top-footer div:nth-last-child(2) p {
+  #top-footer .widget:nth-last-child(2) p {
     float: left;
     width: 50%;
   }
@@ -735,7 +735,7 @@ noscript {
     font-size: 36px;
   }
 
-  #leaders-desc, #gallery p {
+  #leaders > p, #gallery p {
     font-size: 18px;
     margin: 50px auto 90px auto;
   }
@@ -754,20 +754,20 @@ noscript {
 
   /* Advantages */
 
-  #advan-cont {
+  #advantages > div {
     width: 95%;
   }
 
-  #advan-cont ul {
+  #advantages > div ul {
     padding-left: 0px;
     width: 25%;
   }
 
-  #advan-cont ul li:first-child {
+  #advantages > div ul li:first-child {
     font-size: 42px;
   }
 
-  #advan-cont ul li:last-child {
+  #advantages > div ul li:last-child {
     font-size: 16px;
   }
 
@@ -873,7 +873,7 @@ noscript {
 
   /* About us */
 
-  #meeting {
+  #about-us > img {
     width: 45%;
   }
 
@@ -894,20 +894,20 @@ noscript {
 
   /* Top footer */
 
-  #top-footer div {
+  #top-footer .widget {
     width: 25%;
     padding-right: 16px;
   }
 
-  #top-footer div:nth-child(4) {
+  #top-footer .widget:nth-child(4) {
     padding-right: 0;
   }
 
-  #top-footer div ul li {
+  #top-footer .widget ul li {
     padding: 6px 0;
   }
 
-  #top-footer div:nth-last-child(2) p {
+  #top-footer .widget:nth-last-child(2) p {
     float: unset;
     width: unset;
   }
@@ -960,25 +960,25 @@ noscript {
 
   /* Advantages */
 
-  #advan-cont ul li:first-child {
+  #advantages > div ul li:first-child {
     font-size: 52px;
   }
 
-  #advan-cont ul li:last-child {
+  #advantages > div ul li:last-child {
     font-size: 18px;
   }
 
   /* Top footer */
 
-  #top-footer div {
+  #top-footer .widget {
     width: 20%;
   }
 
-  #top-footer div:nth-child(4) {
+  #top-footer .widget:nth-child(4) {
     padding-right: 16px;
   }
 
-  #top-footer div:nth-last-child(2) {
+  #top-footer .widget:nth-last-child(2) {
     width: 20%;
   }
 
