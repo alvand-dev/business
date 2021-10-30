@@ -266,6 +266,7 @@ noscript {
 #contact-us form input , #contact-us form textarea , #contact-us form input[type="email"] {
   width: 100%;
   font-size: 15px;
+  outline: none;
 }
 
 #contact-us form input {
@@ -284,6 +285,7 @@ noscript {
   color: #8f8f8f;
   height: 150px;
   margin-bottom: 30px;
+  resize: none;
 }
 
 #contact-us form input[type="submit"] {
