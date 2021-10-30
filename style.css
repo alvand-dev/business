@@ -15,6 +15,20 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  background-color: #bfc7cb;
+}
+
 noscript {
   background-color: #ff0;
 }
@@ -34,7 +48,7 @@ noscript {
   border: none;
   outline: none;
   background-color: #898d8e;
-  color: white;
+  color: #fff;
   cursor: pointer;
   padding: 10px 15px;
   border-radius: 5px;
@@ -54,7 +68,6 @@ noscript {
 }
 
 #main-header a {
-  text-decoration: none;
   color: #d7794a;
 }
 
@@ -105,7 +118,6 @@ noscript {
 
 #title nav menu li a {
   color: #e8e6e6;
-  text-decoration: none;
   font-size: 15px;
   padding: 20px 16px;
   display: block;
@@ -115,11 +127,6 @@ noscript {
 #title nav menu li a:hover {
   background: rgba(0,179,240,0.5);
   cursor: pointer;
-}
-
-#title img {
-  width: 100%;
-  height: auto;
 }
 
 #welcome {
@@ -158,12 +165,6 @@ noscript {
   margin: 0 20px;
 }
 
-#leaders .leader-cont .leader-img {
-  background-color: #bfc7cb;
-  width: 100%;
-  height: auto;
-}
-
 #leaders .leader-cont h3 {
   margin: 33px auto 20px auto;
 }
@@ -188,9 +189,7 @@ noscript {
 
 #advantages > div ul {
   width: 100%;
-  padding-left: 0;
   float: left;
-  list-style-type: none;
 }
 
 #advantages > div ul li:first-child {
@@ -201,13 +200,11 @@ noscript {
 }
 
 #advantages > div ul li:last-child {
-  color: #ffffff;
+  color: #fff;
   font-size: 18px;
 }
 
 #advantages img {
-  width: 100%;
-  height: auto;
   margin-bottom: -5px;
 }
 
@@ -396,7 +393,6 @@ noscript {
 
 #about-us > img {
   width: 85%;
-  height: auto;
   background-color: #eee;
   margin-bottom: 10px;
 }
@@ -429,7 +425,6 @@ noscript {
 
 #about .image-text img {
   width: 70%;
-  height: auto;
   border-radius: 50%;
 }
 
@@ -452,10 +447,6 @@ noscript {
 #gallery {
   text-align: center;
   padding-bottom: 0;
-}
-
-#gallery .splide__slide img {
-  width: 100%;
 }
 
 #gallery .splide__arrows {
@@ -506,11 +497,6 @@ noscript {
   font-size: 18px;
 }
 
-#top-footer .widget ul {
-  list-style-type: none;
-  padding: 0;
-}
-
 #top-footer .widget ul li {
   padding: 9px 0;
 }
@@ -518,7 +504,6 @@ noscript {
 #top-footer .widget ul li a {
   font-size: 16px;
   color: #d2d3d7;
-  text-decoration: none;
 }
 
 #top-footer .widget ul li a:hover {
@@ -532,7 +517,6 @@ noscript {
 
 #top-footer .widget p a{
   color: #d2d3d7;
-  text-decoration: none;
 }
 
 #top-footer .widget p a:hover{
@@ -759,7 +743,6 @@ noscript {
   }
 
   #advantages > div ul {
-    padding-left: 0px;
     width: 25%;
   }
 
