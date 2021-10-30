@@ -27,6 +27,7 @@ a {
 img {
   width: 100%;
   background-color: #bfc7cb;
+  display: inline-block;
 }
 
 noscript {
@@ -129,6 +130,10 @@ noscript {
   cursor: pointer;
 }
 
+#title img {
+  min-height: 32vw;
+}
+
 #welcome {
   display: none;
 }
@@ -163,6 +168,10 @@ noscript {
   width: 75%;
   display: inline-block;
   margin: 0 20px;
+}
+
+#leaders .leader-cont img {
+  min-height: 28vw;
 }
 
 #leaders .leader-cont h3 {
@@ -206,6 +215,7 @@ noscript {
 
 #advantages img {
   margin-bottom: -5px;
+  min-height: 48vw;
 }
 
 /* Contact us */
@@ -395,6 +405,7 @@ noscript {
 
 #about-us > img {
   width: 85%;
+  min-height: 24vw;
   background-color: #eee;
   margin-bottom: 10px;
 }
@@ -427,6 +438,7 @@ noscript {
 
 #about .image-text img {
   width: 70%;
+  min-height: 8vw;
   border-radius: 50%;
 }
 
@@ -449,6 +461,10 @@ noscript {
 #gallery {
   text-align: center;
   padding-bottom: 0;
+}
+
+#gallery .splide__slide {
+  background-color: #bfc7cb;
 }
 
 #gallery .splide__arrows {
