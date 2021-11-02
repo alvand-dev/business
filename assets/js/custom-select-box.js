@@ -58,7 +58,7 @@ for (i = 0; i < l; i++) {
   });
 }
 
-function closeAllSelect(elmnt) {
+const closeAllSelect = function (elmnt) {
   /* A function that will close all select boxes in the document,
   except the current select box: */
   var x, y, i, xl, yl, arrNo = [];
@@ -68,7 +68,7 @@ function closeAllSelect(elmnt) {
   yl = y.length;
   for (i = 0; i < yl; i++) {
     if (elmnt == y[i]) {
-      arrNo.push(i)
+      arrNo.push(i);
     } else {
       y[i].classList.remove("select-arrow-active");
     }
@@ -78,7 +78,7 @@ function closeAllSelect(elmnt) {
       x[i].classList.add("select-hide");
     }
   }
-}
+};
 
 /* If the user clicks anywhere outside the select box,
 then close all select boxes: */

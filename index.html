@@ -12,7 +12,8 @@
   <link rel="stylesheet" href="assets/fonts/fontawesome/css/brands.min.css">
   <link rel="stylesheet" href="assets/fonts/fontawesome/css/solid.min.css">
   <link rel="stylesheet" href="assets/css/splide-core.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
   <script src="assets/js/back-to-top.js" defer></script>
   <script src="assets/js/top-nav.js" defer></script>
   <script src="assets/js/custom-select-box.js" defer></script>
@@ -30,6 +31,10 @@
 
 <!-- Title section -->
 <section id="title">
+  <header id="welcome">
+    <h2>WELCOME TO</h2>
+    <h3>Our Website</h3>
+  </header>
   <i id="toggle-icon" class="fas fa-bars" onclick="topNav.toggle();"></i>
   <nav>
     <menu id="top-menu">
@@ -42,10 +47,6 @@
     </menu>
   </nav>
   <img src="assets/img/company-01.jpg" alt="Company building">
-  <header id="welcome">
-    <h2>WELCOME TO</h2>
-    <h3>Our Website</h3>
-  </header>
 </section>
 
 <!-- Team leaders -->
@@ -71,7 +72,7 @@
 </section>
 
 <!-- Advantages -->
-<section id="advantages">
+<div id="advantages">
   <div>
     <ul>
       <li>2500</li>
@@ -92,7 +93,7 @@
     <div class="clear"></div>
   </div>
   <img src="assets/img/company-02.jpg" alt="Company employees are working">
-</section>
+</div>
 
 <!-- Contact us -->
 <section id="contact-us">
@@ -102,9 +103,9 @@ accusantium doloremque laudantium, totam rem aperiam</p>
   <form action="#" method="post">
     <input type="text" name="fname" placeholder="Name" required>
     <!-- Surround the select box within a "custom-select" DIV element. -->
-    <div class="custom-select" name="fcategory">
-      <select required>
-        <option value="0" disabled selected>Category</option>
+    <div class="custom-select">
+      <select name="fcategory" required>
+        <option value="" disabled selected>Category</option>
         <option value="financial">Financial</option>
         <option value="technical">Technical</option>
         <option value="feedback">Feedback</option>
@@ -113,9 +114,9 @@ accusantium doloremque laudantium, totam rem aperiam</p>
     </div>
     <input type="tel" name="ftel" placeholder="Phone" required>
     <!-- Surround the select box within a "custom-select" DIV element. -->
-    <div class="custom-select" name="fcity">
-      <select required>
-        <option value="0" disabled selected>City</option>
+    <div class="custom-select">
+      <select name="fcity" required>
+        <option value="" disabled selected>City</option>
         <option value="Tehran">Tehran</option>
        <option value="Other">Other</option>
       </select>

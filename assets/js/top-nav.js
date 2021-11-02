@@ -13,7 +13,7 @@ const topNav = {
       this.toggleIcon.className = 'fas fa-times';
     }
   }
-}
+};
 
 topNav.menuLinks.forEach((item) => {
   item.addEventListener('click', () => { topNav.toggle(); });

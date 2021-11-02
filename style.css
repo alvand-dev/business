@@ -549,37 +549,7 @@ noscript {
   margin: 0 3px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* For devices with 576px width and more */
 
 @media only screen and (min-width: 576px) {
 
@@ -651,37 +621,7 @@ noscript {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* For devices with 768px width and more */
 
 @media only screen and (min-width: 768px) {
 
@@ -782,30 +722,7 @@ noscript {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* For devices with 992px width and more */
 
 @media only screen and (min-width: 992px) {
 
@@ -907,30 +824,7 @@ noscript {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* For devices with 1200px width and more */
 
 @media only screen and (min-width: 1200px) {
 
@@ -959,6 +853,8 @@ noscript {
   }
 
 }
+
+/* For hoverable devices */
 
 @media only screen and (hover: hover) {
 
@@ -996,6 +892,5 @@ noscript {
   #bottom-footer div a i:hover {
     color: #999;
   }
-
 
 }
