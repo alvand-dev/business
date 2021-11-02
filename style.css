@@ -266,6 +266,10 @@ noscript {
   outline: none;
 }
 
+#contact-us form input::placeholder , #contact-us form textarea::placeholder {
+  color: #8f8f8f;
+}
+
 #contact-us form input {
   background-color: transparent;
   border: 0;
