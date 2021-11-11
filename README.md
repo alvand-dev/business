@@ -1,6 +1,6 @@
 # Business Theme
 
-It is a website template built with HTML, CSS, and JavaScript for your business.
+It is a responsive website template built with HTML, CSS, and JavaScript for your business.
 
 This theme, tested in the recent version of Chrome, Firefox, Edge, and Opera Browsers (November 2021).
 
