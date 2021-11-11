@@ -6,7 +6,9 @@ This theme, tested in the recent version of Chrome, Firefox, Edge, and Opera Bro
 
 I've not used any CSS or JS framework. Built with CSS float property, so it is more compatible with old browsers versions.
 
-I use Normalize.css for compatibility purposes and Splide.js for building the gallery's slider. I also use Fontawesome Solid, Merriweather, and Open Sans fonts.
+I use Normalize.css for compatibility purposes and Splide.js for building the gallery's slider.
+
+I also use Fontawesome Solid, Merriweather, and Open Sans fonts.
 
 All of the images are free to use, and most of them are from unsplash.com.
 
