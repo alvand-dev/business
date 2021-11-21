@@ -1,18 +1,25 @@
 "use strict";
 
-// When the user scrolls down 700px from the top of the document, show the button
-window.onscroll = function() {backToTop.scroll();};
+{
 
-const backToTop = {
-  btn: document.getElementById("back-to-top"), //Get the button
-  scroll: function() {  // Show and hide the button
-    if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
-      this.btn.style.display = "block";
-    } else {
-      this.btn.style.display = "none";
-    }
-  },
-  top: function() { // When the user clicks on the button, scroll to the top of the document
-    window.scrollTo({top: 0, behavior: "smooth"});
+// Catch HTML element
+const backToTop = document.querySelector('#back-to-top');
+
+// Runs when a user scrolls
+window.onscroll = () => scroll();
+
+// When the user scrolls down 700px from the top of the document, show the button
+const scroll = () => {
+  if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+    backToTop.style.display = "block";
+  } else {
+    backToTop.style.display = "none";
   }
 };
+
+// When the user clicks on the button, scroll to the top of the document
+backToTop.addEventListener('click', () => {
+  window.scrollTo({top: 0, behavior: "smooth"});
+});
+
+}
