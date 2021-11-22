@@ -88,6 +88,19 @@ noscript {
   font-size: 17px;
   padding: 4px;
   cursor: pointer;
+  animation: bounce 1s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 #title .fas.fa-times {
