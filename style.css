@@ -53,6 +53,7 @@ noscript {
   padding: 10px 15px;
   border-radius: 5px;
   font-size: 18px;
+  transition: 0.5s;
 }
 
 /* Main header */
@@ -569,6 +570,7 @@ noscript {
   width: 35px;
   border: 1px solid #fff;
   margin: 0 3px;
+  transition: 0.5s;
 }
 
 /* For devices with 576px width and more */
@@ -770,6 +772,7 @@ noscript {
   #title nav menu li a {
     padding: 20px;
     float: left;
+    transition: 0.5s;
   }
 
   #welcome h2 {
