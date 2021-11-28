@@ -78,14 +78,17 @@ noscript {
   position: relative;
 }
 
-#title .fas.fa-bars, #title .fas.fa-times {
+#open-top-menu, #close-top-menu {
+  background-color: rgba(31, 49, 56, 0.95);
   display: block;
   position: fixed;
   right: 5px;
   top:  5px;
-  background-color: rgba(31, 49, 56, 0.95);
-  color: #fff;
   z-index: 9;
+}
+
+#open-top-menu i, #close-top-menu i {
+  color: #fff;
   font-size: 17px;
   padding: 4px;
   cursor: pointer;
@@ -593,7 +596,7 @@ noscript {
 
   /* Title section */
 
-  #title .fas.fa-bars, #title .fas.fa-times {
+  #open-top-menu i, #close-top-menu i {
     font-size: 18px;
   }
 
@@ -658,7 +661,7 @@ noscript {
 
   /* Title section */
 
-  #title .fas.fa-bars, #title .fas.fa-times {
+  #open-top-menu i, #close-top-menu i {
     font-size: 19px;
   }
 
@@ -751,7 +754,7 @@ noscript {
 
   /* Title section */
 
-  #title .fas.fa-bars, #title .fas.fa-times {
+  #open-top-menu, #close-top-menu {
     display: none;
   }
 
