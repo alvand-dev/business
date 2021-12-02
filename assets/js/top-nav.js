@@ -12,7 +12,7 @@
     menu.classList.add("show-top-menu");
   });
 
-  // Open the top menu
+  // Close the top menu
   closeMenuBtn.addEventListener("click", () => {
     menu.classList.remove("show-top-menu");
   });
