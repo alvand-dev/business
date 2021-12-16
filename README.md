@@ -16,3 +16,7 @@ Thanks to <a href="http://www.freepik.com/" target="_blank">denamorado / Freepik
 
 You can see the theme on:
 https://mohammad177.github.io/business-theme/
+
+Desktop size screenshot:
+
+<img src="https://alvand.dev/wp-content/uploads/2021/11/business-theme-desktop-screenshot-1.jpg" alt="Business theme screenshot desktop">
