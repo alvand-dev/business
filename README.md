@@ -15,7 +15,7 @@ All of the images are free to use, and most of them are from unsplash.com.
 Thanks to <a href="http://www.freepik.com/" target="_blank">denamorado / Freepik</a> for theme .psd file.
 
 You can see the theme on:
-https://mohammad177.github.io/business-theme/
+https://alvand1399.github.io/business-theme/
 
 Desktop size screenshot:
 
