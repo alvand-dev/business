@@ -10,6 +10,7 @@
     <meta name="author" content="Mohammad Ahmadian" />
     <link rel="icon" type="image/png" href="assets/img/logo-1.png" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/slider.css" />
     <link rel="stylesheet" href="assets/css/normalize.css" />
     <link
       rel="stylesheet"
@@ -17,7 +18,6 @@
     />
     <link rel="stylesheet" href="assets/fonts/fontawesome/css/brands.min.css" />
     <link rel="stylesheet" href="assets/fonts/fontawesome/css/solid.min.css" />
-    <link rel="stylesheet" href="assets/css/splide-core.min.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Merriweather"
@@ -30,7 +30,6 @@
     <script src="assets/js/top-nav.js" defer></script>
     <script src="assets/js/custom-select-box.js" defer></script>
     <script src="assets/js/slider.js" defer></script>
-    <script src="assets/js/splide.min.js" defer></script>
     <title>Alvand | Web Development Company</title>
   </head>
   <body>
@@ -196,7 +195,7 @@
     </section>
 
     <!-- Gallery -->
-    <section id="gallery" class="splide">
+    <section id="gallery" class="slider-container">
       <h2>OUR GALLERY</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
@@ -204,50 +203,48 @@
         volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
         ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
       </p>
-      <div class="splide__track">
-        <ul class="splide__list">
-          <li class="splide__slide">
-            <a href="assets/img/business-01.jpg">
-              <img src="assets/img/business-01.jpg" alt="Business woman" />
-            </a>
-          </li>
-          <li class="splide__slide">
-            <a href="assets/img/business-02.jpg">
-              <img src="assets/img/business-02.jpg" alt="A man working" />
-            </a>
-          </li>
-          <li class="splide__slide">
-            <a href="assets/img/business-03.jpg">
-              <img src="assets/img/business-03.jpg" alt="A man walking" />
-            </a>
-          </li>
-          <li class="splide__slide">
-            <a href="assets/img/business-04.jpg">
-              <img src="assets/img/business-04.jpg" alt="A man in suit" />
-            </a>
-          </li>
-          <li class="splide__slide">
-            <a href="assets/img/business-05.jpg">
-              <img src="assets/img/business-05.jpg" alt="Company buildings" />
-            </a>
-          </li>
-          <li class="splide__slide">
-            <a href="assets/img/business-06.jpg">
-              <img src="assets/img/business-06.jpg" alt="Laptop" />
-            </a>
-          </li>
-          <li class="splide__slide">
-            <a href="assets/img/business-07.jpg">
-              <img src="assets/img/business-07.jpg" alt="Business Man" />
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="splide__arrows">
-        <span class="splide__arrow splide__arrow--prev">
+      <ul class="slider-list">
+        <li class="slider-item">
+          <a href="assets/img/business-01.jpg">
+            <img src="assets/img/business-01.jpg" alt="Business woman" />
+          </a>
+        </li>
+        <li class="slider-item">
+          <a href="assets/img/business-02.jpg">
+            <img src="assets/img/business-02.jpg" alt="A man working" />
+          </a>
+        </li>
+        <li class="slider-item">
+          <a href="assets/img/business-03.jpg">
+            <img src="assets/img/business-03.jpg" alt="A man walking" />
+          </a>
+        </li>
+        <li class="slider-item">
+          <a href="assets/img/business-04.jpg">
+            <img src="assets/img/business-04.jpg" alt="A man in suit" />
+          </a>
+        </li>
+        <li class="slider-item">
+          <a href="assets/img/business-05.jpg">
+            <img src="assets/img/business-05.jpg" alt="Company buildings" />
+          </a>
+        </li>
+        <li class="slider-item">
+          <a href="assets/img/business-06.jpg">
+            <img src="assets/img/business-06.jpg" alt="Laptop" />
+          </a>
+        </li>
+        <li class="slider-item">
+          <a href="assets/img/business-07.jpg">
+            <img src="assets/img/business-07.jpg" alt="Business Man" />
+          </a>
+        </li>
+      </ul>
+      <div class="slider-arrows">
+        <span class="slider-arrow-prev">
           <i class="fas fa-angle-left"></i>
         </span>
-        <span class="splide__arrow splide__arrow--next">
+        <span class="slider-arrow-next">
           <i class="fas fa-angle-right"></i>
         </span>
       </div>

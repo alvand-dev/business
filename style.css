@@ -501,15 +501,6 @@ noscript {
   padding-bottom: 0;
 }
 
-#gallery .splide__slide {
-  background-color: #bfc7cb;
-}
-
-#gallery .splide__arrows {
-  background-color: #d6d6d6;
-  height: 75px;
-}
-
 #gallery i.fas.fa-angle-right,
 #gallery i.fas.fa-angle-left {
   background-color: #88543a;
