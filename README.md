@@ -6,7 +6,7 @@ I've not used any CSS or JS framework in this project. I built it with CSS float
 
 For icons, I used Fontawesome 5 Solid and for fonts, Merriweather and Open Sans had been chosen to use. All of the images in this project have a free-to-use license, and most of them are from the Unsplash free image website from various photographers.
 
-Thanks to <a href="http://www.freepik.com/" target="_blank">denamorado / Freepik</a> for theme .psd file.
+Thanks to <a href="https://www.freepik.com/denamorado" target="_blank">Denamorado / Freepik</a> for theme .psd file.
 
 You can see the theme on:
 https://alvand1399.github.io/business-theme/
