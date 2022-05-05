@@ -1,23 +1,22 @@
 .slider-container {
-  padding: 10px;
-}
-
-.slider-list {
-  list-style-type: none;
-  padding-left: 0;
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
   overflow: hidden;
 }
 
+.slider-list {
+  margin: 0;
+  display: flex;
+  overflow: hidden;
+  transition: 1s;
+}
+
 .slider-item {
-  margin-bottom: -4px;
   background-color: #bfc7cb;
+  margin-bottom: -4px;
+  min-height: 150px;
 }
 
 .slider-item img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .slider-arrows {

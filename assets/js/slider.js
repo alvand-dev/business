@@ -1,101 +1,102 @@
-"use strict";
+'use strict';
 
 {
-  // Get HTML elements
-  const sliderList = document.querySelector("#gallery .slider-list");
-  const sliderItems = document.querySelectorAll("#gallery .slider-item");
-  const sliderNext = document.querySelector("#gallery .slider-arrow-next");
-  const sliderPrev = document.querySelector("#gallery .slider-arrow-prev");
+  // A class for building sliders from it
+  class Slider {
+    constructor(id, mediaQueries) {
+      // Get HTML elements
+      this.slider = document.querySelector(`#${id}`);
+      this.sliderList = this.slider.querySelector('.slider-list');
+      this.sliderItems = this.slider.querySelectorAll('.slider-item');
+      this.sliderNext = this.slider.querySelector('.slider-arrow-next');
+      this.sliderPrev = this.slider.querySelector('.slider-arrow-prev');
 
-  // Define variables
-  let numberOfItems;
-  let itemIndex;
+      // Get media queries
+      this.mediaQueryList = [
+        window.matchMedia(`screen and (max-width:${mediaQueries[0] - 1}px)`),
+      ];
+      mediaQueries.forEach((mediaQuery) => {
+        this.mediaQueryList.push(
+          window.matchMedia(`screen and (min-width:${mediaQuery}px)`)
+        );
+      });
 
-  // Define media queries
-  const mediaQueryList = [
-    window.matchMedia("(max-width: 575px)"),
-    window.matchMedia("(max-width: 767px)"),
-    window.matchMedia("(max-width: 991px)"),
-    window.matchMedia("(max-width: 1199px)"),
-  ];
+      // Define global variables
+      this.numberOfVisibleItems;
+      this.currentItemIndex;
+      this.sliderItemsLength = this.sliderItems.length;
+      this.mediaQueryLength = this.mediaQueryList.length;
 
-  // Display slider items
-  const displayItems = () => {
-    let html = "";
-    let len = itemIndex + numberOfItems;
-    for (let i = itemIndex; i < len; i++) {
-      html += sliderItems[i].outerHTML;
-    }
-    sliderList.innerHTML = html;
-  };
+      // Add event listener: to call the run function again when screen resized
+      this.mediaQueryList.forEach((mediaQuery) => {
+        mediaQuery.addEventListener('change', () => {
+          this.run();
+        });
+      });
 
-  // Handel number of images base on device size
-  const HandleScreen = () => {
-    if (mediaQueryList[0].matches) {
-      numberOfItems = 1;
-      itemIndex = 0;
-      // set width and height to item for when image does not load
-      sliderItems.forEach((item) => {
-        item.style.width = "100%";
-        item.style.minHeight = "150px";
+      // Add event listener: to go to next slide
+      this.sliderNext.addEventListener('click', () => {
+        if (
+          this.currentItemIndex <
+          this.sliderItemsLength - this.numberOfVisibleItems
+        ) {
+          this.currentItemIndex++;
+          this.shiftSlides();
+        }
       });
-    } else if (mediaQueryList[1].matches) {
-      numberOfItems = 2;
-      itemIndex = 0;
-      // set width and height to item for when image does not load
-      sliderItems.forEach((item) => {
-        item.style.width = "50%";
-        item.style.minHeight = "150px";
-      });
-    } else if (mediaQueryList[2].matches) {
-      numberOfItems = 3;
-      itemIndex = 0;
-      // set width and height to item for when image does not load
-      sliderItems.forEach((item) => {
-        item.style.width = "35%";
-        item.style.minHeight = "150px";
-      });
-    } else if (mediaQueryList[3].matches) {
-      numberOfItems = 4;
-      itemIndex = 0;
-      // set width and height to item for when image does not load
-      sliderItems.forEach((item) => {
-        item.style.width = "25%";
-        item.style.minHeight = "150px";
-      });
-    } else {
-      numberOfItems = 5;
-      itemIndex = 0;
-      // set width and height to item for when image does not load
-      sliderItems.forEach((item) => {
-        item.style.width = "20%";
-        item.style.minHeight = "150px";
+
+      // Add event listener: to go to previous slide
+      this.sliderPrev.addEventListener('click', () => {
+        if (this.currentItemIndex > 0) {
+          this.currentItemIndex--;
+          this.shiftSlides();
+        }
       });
     }
-    displayItems();
-  };
 
-  // Run handel screen function for the first time
-  HandleScreen();
+    // Run the slider
+    run() {
+      let index = this.mediaQueryLength - 1;
+      while (index >= 0) {
+        if (this.mediaQueryList[index].matches) {
+          // Set number of visible slides
+          this.numberOfVisibleItems = index + 1;
 
-  // Add listener to media query list items
-  for (let i = 0; i < mediaQueryList.length; i++) {
-    mediaQueryList[i].addListener(HandleScreen);
+          // Reset the slider
+          this.currentItemIndex = 0;
+          this.sliderList.style.transform = 'translateX(0)';
+
+          // Set slider list width
+          this.sliderList.style.width = `calc(${
+            (100 / this.numberOfVisibleItems) * this.sliderItemsLength
+          }% + ${(this.sliderItemsLength / this.numberOfVisibleItems) * 16}px)`;
+
+          // Set slides width
+          this.sliderItems.forEach((item) => {
+            item.style.width = `${100 / this.numberOfVisibleItems}%`;
+          });
+
+          // Exit the loop
+          break;
+        }
+        index--;
+      }
+    }
+
+    // A function to shift slides left and right
+    shiftSlides() {
+      this.sliderList.style.transform = `translateX(-${
+        (100 / this.sliderItemsLength) * this.currentItemIndex
+      }%`;
+    }
   }
 
-  // Diplay next slide
-  sliderNext.addEventListener("click", function () {
-    if (itemIndex < sliderItems.length - numberOfItems) {
-      itemIndex++;
-      displayItems();
-    }
-  });
+  /* 
+  Note about creating new slider:
+  First parameter is the id of the HTML slider-container element of each slider.
+  Second parameter is an array of the media queries (breaking points) where the number of slides increases.
+  */
 
-  // Display Previous slide
-  sliderPrev.addEventListener("click", function () {
-    if (itemIndex > 0) {
-      itemIndex--;
-      displayItems();
-    }
-  });
+  // Create a new slider and run it
+  new Slider('gallery', [576, 768, 992, 1200]).run();
 }
