@@ -1,0 +1,3 @@
+// Ignore files that are used for testing
+.eslintrc.json
+package.json
