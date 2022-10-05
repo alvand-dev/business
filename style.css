@@ -10,7 +10,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1,
@@ -254,7 +254,7 @@ noscript {
 }
 
 #contact-us::before {
-  content: "";
+  content: '';
   background-color: #2a3e47;
   top: 0;
   left: 0;
@@ -266,8 +266,8 @@ noscript {
 }
 
 #contact-us::after {
-  content: "";
-  background-image: url("assets/img/contact-us-1.jpg");
+  content: '';
+  background-image: url('assets/img/contact-us-1.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -305,7 +305,7 @@ noscript {
 
 #contact-us form input,
 #contact-us form textarea,
-#contact-us form input[type="email"] {
+#contact-us form input[type='email'] {
   width: 100%;
   font-size: 15px;
   outline: none;
@@ -335,7 +335,7 @@ noscript {
   resize: none;
 }
 
-#contact-us form input[type="submit"] {
+#contact-us form input[type='submit'] {
   margin: 20px 0 0 0;
   color: #fff;
   background-color: #89553b;
@@ -368,7 +368,7 @@ noscript {
 /* Style the arrow inside the select element: */
 .select-selected:after {
   position: absolute;
-  content: "";
+  content: '';
   top: 14px;
   right: 10px;
   width: 0;
@@ -425,9 +425,9 @@ noscript {
 }
 
 #about-us::before {
-  content: "";
+  content: '';
   background-color: #eee;
-  background-image: url("assets/img/about-us-01.jpg");
+  background-image: url('assets/img/about-us-01.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -525,6 +525,13 @@ noscript {
   padding: 0 2px 0 0;
   right: unset;
   left: 2vw;
+}
+
+#gallery .slider-arrow-next:hover i.fas.fa-angle-right,
+#gallery .slider-arrow-next:focus i.fas.fa-angle-right,
+#gallery .slider-arrow-prev:hover i.fas.fa-angle-left,
+#gallery .slider-arrow-prev:focus i.fas.fa-angle-left {
+  border: 2px solid #000;
 }
 
 /* Top footer */
@@ -749,7 +756,7 @@ noscript {
     font-size: 16px;
   }
 
-  #contact-us form input[type="email"] {
+  #contact-us form input[type='email'] {
     width: 96%;
   }
 
@@ -758,7 +765,7 @@ noscript {
     font-size: 16px;
   }
 
-  #contact-us form input[type="submit"] {
+  #contact-us form input[type='submit'] {
     margin: 0 10px 0 0;
     float: right;
   }
